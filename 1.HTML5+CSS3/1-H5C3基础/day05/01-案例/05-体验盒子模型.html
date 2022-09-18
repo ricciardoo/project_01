@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05-体验盒子模型</title>
+  <style>
+    /* 纸箱子, 填充泡沫 */
+    div {
+      width: 300px;
+      height: 300px;
+      background-color: pink;
+      /* 边框线 == 纸箱子 */
+      border: 5px solid #000;
+      border-radius: 2%;
+      /* 内边距 == 填充泡沫 : 出现在内容和盒子边缘之间 */
+      padding: 20px;
+
+      /* 外边距 : 出现在两个盒子之间, 出现在盒子的外面*/
+      margin: 50px;
+    }
+
+    li:nth-last-child(2) {
+      color: pink;
+    }
+  </style>
+</head>
+
+<body>
+  <div>内容电脑</div>
+  <div>内容电脑</div>
+
+  <ul>
+    <li>这是第1个list。</li>
+    <li>这是第2个list。</li>
+    <li>这是第3个list。</li>
+    <li>这是第4个list。</li>
+    <li>这是第5个list。</li>
+  </ul>
+</body>
+
+</html>
