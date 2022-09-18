@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Practice</title>
+  <link rel="shortcut icon" href="/Users/oyrx/Documents/壁纸/头像.png" type="image/x-icon">
+
+</head>
+
+<body>
+  <script>
+
+    // 变量、字符串拼接
+    // var userName = prompt('请输入姓名：');
+    // var userAge = prompt('请输入年龄：');
+    // var userSex = prompt('请输入性别：');
+    // var result = '您的姓名是：' + userName + '\n您的年龄是：' + userAge + '\n您的性别是：' + userSex;
+    // alert(result);
+
+
+    //人的一生 for循环嵌套if多分枝语句
+    /*  for (var i = 0; i <= 100; i++) {
+       if (i == 0) {
+         console.log('他今年0岁，他出生了。');
+       } else if (i == 100) {
+         console.log('他今年100岁，他死了。');
+       } else {
+         console.log('他今年' + i + '岁了。');
+       }
+     } */
+
+
+    // switch语句
+    /* var a = prompt('请输入您要查询的水果名称：');
+    switch (a) {
+      case '苹果':
+        alert('苹果3.5元/斤');
+        break;
+      case '西瓜':
+        alert('西瓜5元/斤');
+        break;
+      case '水蜜桃':
+        alert('水蜜桃10元/斤');
+        break;
+      case '火龙果':
+        alert('火龙果50元/斤');
+        break;
+      default:
+        alert('没有此种类的水果！');
+    } */
+
+
+    // 班级成绩
+    // var sum = 0;
+    // var avg = 0;
+    // var students = prompt('请输入班级总人数：');
+    // for (var i = 1; i <= students; i++) {
+    //   var cj = prompt('请输入第' + i + '个学生的成绩：');
+    //   sum = sum + parseFloat(cj);
+    // }
+    // avg = sum / parseFloat(students);
+    // alert('学生总成绩是：' + sum + '\n学生平均成绩是：' + avg);
+
+
+    // 五行五列小星星
+    // var str = '';
+    // for (i = 1; i <= 5; i++) {
+    //   for (j = 1; j <= 5; j++) {
+    //     str = str + '*';
+    //   }
+    //   str = str + '\n';
+    // }
+    // console.log(str);
+
+
+    // 用户输入 x行x列 小星星
+    // var hang = prompt('请输入行：');
+    // var lie = prompt('请输入列：');
+    // var str = '';
+    // for (i = 1; i <= parseInt(hang); i++) {
+    //   for (j = 1; j <= parseInt(lie); j++) {
+    //     str = str + '*';
+    //   }
+    //   str = str + '\n';
+    // }
+    // console.log(str);
+
+
+    // 倒三角 小星星
+    // var hang = prompt('请输入行：');
+    // var lie = prompt('请输入列：');
+    // var str = '';
+    // for (i = 1; i <= 10; i++) {
+    //   for (j = i; j <= 10; j++) {
+    //     str = str + '*';
+    //   }
+    //   str = str + '\n';
+    // }
+    // console.log(str);
+
+
+    // 正三角 小星星
+    // var str = '';
+    // for (var i = 10; i >= 1; i--) {
+    //   for (var j = i; j <= 10; j++) {
+    //     str = str + '*';
+    //   }
+    //   str = str + '\n';
+    // }
+    // console.log(str);
+
+
+    // 九九乘法表
+    // var str = '';
+    // for (var i = 1; i <= 9; i++) {
+    //   for (var j = 1; j <= i; j++) {
+    //     str = str + j + 'x' + i + '=' + i * j + '\t';
+    //   }
+    //   str = str + '\n';
+    // }
+    // console.log(str);
+
+
+    //数组最大值
+    // var arr = [77, 43, 23, 55, 66, 88];
+    // var max = arr[0];
+    // for (var i = 1; i <= arr.length; i++) {
+    //   if (arr[i] > max) {
+    //     max = arr[i];
+    //   }
+    // }
+    // alert('最大值是' + max);
+
+
+    // 数组1-10
+    // arr = [];
+    // for (var i = 0; i < 10; i++) {
+    //   arr[i] = i + 1;
+    // }
+    // console.log(arr);
+
+
+    // 大于10的元素放入新数组 方法1
+    // arr = [2, 44, 33, 23, 5, 6, 11, 233];
+    // newArr = [];
+    // var j = 0;
+    // for (var i = 0; i < arr.length; i++) {
+    //   if (arr[i] > 10) {
+    //     newArr[j] = arr[i];
+    //     j++;
+    //   }
+    // }
+    // console.log(newArr);
+
+
+    // 大于10的元素放入新数组 方法2
+    // arr = [2, 44, 33, 23, 5, 6, 11, 233];
+    // newArr = [];
+    // for (var i = 0; i < arr.length; i++) {
+    //   if (arr[i] > 10) {
+    //     newArr[newArr.length] = arr[i];
+    //   }
+    // }
+    // console.log(newArr);
+
+
+    // 去除数组里的0
+    // arr = [2, 44, 0, 0, 5, 0, 0, 23];
+    // newArr = [];
+    // for (var i = 0; i <= arr.length; i++) {
+    //   if (arr[i] != 0) {
+    //     newArr[newArr.length] = arr[i];
+    //   }
+    // }
+    // console.log(newArr);
+
+
+    // 颠倒数组
+    // var arr = ['pink', 'blue', 'purple'];
+    // var newArr = [];
+    // for (var i = arr.length - 1; i >= 0; i--) {
+    //   newArr[newArr.length] = arr[i];
+    // }
+    // console.log(newArr);
+
+
+    // 求两数最大值
+    // function getMax (num1, num2) {
+    //   return num1 > num2 ? num1 : num2;
+    // }
+    // console.log(getMax(1, 4));
+
+
+    // 判断是否闰年
+    // var flag = false;
+    // function isRunYear (year) {
+    //   if (year % 4 == 0 && year % 4 != 0 || year % 100 == 0) {
+    //     flag = true;
+    //   }
+    //   return flag;
+    // }
+    // console.log(isRunYear(1999));
+
+
+    // 用户输入年份，输出当年二月份的天数
+    // function backDay () {
+    //   var year = prompt('请输入一个年份：');
+    //   if (isRunYear(year)) {
+    //     alert('是闰年，29天');
+    //   } else {
+    //     alert('是平年，28天');
+    //   }
+    // }
+    // backDay(2000);
+
+    // var flag = false;
+    // function isRunYear (year) {
+    //   if (year % 4 == 0 && year % 4 != 0 || year % 100 == 0) {
+    //     flag = true;
+    //   }
+    //   return flag;
+    // }
+
+
+    // 创建对象
+    // var dog = new Object();
+    // dog.name = 'tim';
+    // dog.age = 2;
+    // dog.sex = 'male';
+    // dog.sayHi = function () {
+    //   console.log('hi!');
+    // }
+    // console.log(dog.name);
+    // dog.sayHi();
+
+
+    // 构造函数
+    // function Heros (name, type, blood) {
+    //   this.name = name;
+    //   this.type = type;
+    //   this.blood = blood;
+    //   this.attack = function (attack) {
+    //     console.log(attack);
+    //   }
+    // }
+    // var lianpo = new Heros('廉颇', '力量型', '500血量');
+    // lianpo.attack('近战');
+    // var houyi = new Heros('后裔', '射手型', '100血量');
+    // houyi.attack('远程');
+    // console.log(lianpo.name);
+    // console.log(lianpo);
+    // console.log(houyi);
+
+
+    // // 计算器
+    // function twoNum () {
+    //   var num1 = prompt('请输入第一个数：');
+    //   var num2 = prompt('请输入第二个数');
+    //   num1 = parseInt(num1);
+    //   num2 = parseInt(num2);
+    //   var result = num1 + num2;
+    //   alert(result);
+    // }
+    // alert('欢迎使用简易计算器：\n1.加法运算\n2.减法运算\n3.乘法运算\n4.除法运算\n5.退出');
+    // var num = prompt('请输入数字');
+    // if (num == 1) {
+    //   twoNum();
+    // }
+
+    // Math方法
+    // console.log(Math.PI);
+    // console.log(Math.max(2, 5, 44));
+    // console.log(Math.min(2, 5, 44));
+
+
+    //获取年月日
+    // function getDate () {
+    //   var date = new Date();
+    //   var year = date.getFullYear();
+    //   var month = date.getMonth() + 1;
+    //   var dates = date.getDate();
+    //   var day = date.getDay();
+    //   var hour = date.getHours();
+    //   var min = date.getMinutes();
+    //   var sec = date.getSeconds();
+    //   var arr = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六']
+    //   return '现在的时间是:\n' + year + '年' + month + '月' + dates + '日 ' + hour + '时' + min + '分' + sec + '秒 ' + arr[day];
+    // }
+    // console.log(getDate());
+
+
+    //获取时分秒(补0版)
+    // function getTime () {
+    //   var time = new Date();
+    //   var hour = time.getHours();
+    //   hour = hour < 10 ? '0' + hour : hour;
+    //   var min = time.getMinutes();
+    //   min = min < 10 ? '0' + min : min;
+    //   var sec = time.getSeconds();
+    //   sec = sec < 10 ? '0' + sec : sec;
+    //   return hour + ':' + min + ':' + sec;
+    // }
+    // console.log(getTime());
+
+
+    // 电商倒计时
+    // function countDown (time) {
+    //   var nowTime = Date.now(); //H5新增
+    //   var inputTime = +new Date(time);  //最常用
+    //   var times = (inputTime - nowTime) / 1000; //转换成秒数
+    //   var d = parseInt(times / 60 / 60 / 24); //天
+    //   d = d < 10 ? '0' + d : d; //补0
+    //   var h = parseInt(times / 60 / 60 % 24); //时
+    //   h = h < 10 ? '0' + h : h;
+    //   var m = parseInt(times / 60 % 60);  //分
+    //   m = m < 10 ? '0' + m : m;
+    //   var s = parseInt(times % 60); //秒
+    //   s = s < 10 ? '0' + s : s;
+    //   return d + '天' + h + '时' + m + '分' + s + '秒';
+    // }
+    // console.log(countDown('2022-11-11 00:00:00'));
+    // var date = new Date;
+    // console.log(date);
+
+
+    // 数组查重
+    // function unique (arr) {
+    //   var newArr = [];
+    //   for (var i = 0; i < arr.length; i++) {
+    //     if (newArr.indexOf(arr[i]) === -1) {
+    //       newArr.push(arr[i]);
+    //     }
+    //   }
+    //   return newArr;
+    // }
+    // var demo = [1, 2, 2, 2, 3, 4, 5];
+    // console.log(unique(demo));
+
+
+    //转字符串
+    // var arr = [1, 2, 3, 4, 5];
+    // console.log(arr);
+    // console.log(arr.toString());
+    // console.log(arr.join());
+    // console.log(arr.join('-'));
+    // console.log(arr.join('&'));
+
+
+    // 查找o出现的次数和位置
+    // function checkTimesAndLocation (str) {
+    //   var index = str.indexOf('o');
+    //   var num = 1;
+    //   while (index != -1) {
+    //     console.log('o第' + num + '次出现的位置的下标是' + index);
+    //     num++;
+    //     index = str.indexOf('o', index + 1);
+    //   }
+    //   console.log('o出现的次数是' + (num - 1) + '次。');
+    // }
+    // checkTimesAndLocation('feofsovdwoggrossfod');
+    // // checkTimesAndLocation(['pink', 'blue', 'green', 'pink', 'pink']);//数组
+
+
+    // 字符串对象
+    // var str = 'dsjfiei';
+    // console.log(str.charAt(2));
+    // console.log(str.charCodeAt(2)); //返回ascii码
+    // console.log(str[2]);  //H5新增
+
+
+    //统计出现次数最多的字符串以及次数
+    // var str = 'goooogle';
+    // var o = {};
+    // for (var i = 0; i < str.length; i++) {
+    //   var chars = str.charAt(i);
+    //   if (o[chars]) {
+    //     o[chars]++;
+    //   } else {
+    //     o[chars] = 1;
+    //   }
+    // }
+    // console.log(o);
+    // var max = 0;
+    // var ch = '';
+    // for (var k in o) {
+    //   //k是属性名 o[k]是属性值
+    //   if (o[k] > max) {
+    //     max = o[k];
+    //     ch = k;
+    //   }
+    // }
+    // console.log(max);
+    // console.log('最多的字符是' + ch);
+
+
+    //拼接字符串
+    // var str = 'andy';
+    // console.log(str.concat('hello'));
+    // //截取字符串
+    // var str1 = '索尼大法好';
+    // console.log(str1.substr(2, 2)); //第一个2是索引号，第二个2是截取2个字符
+    // //替换字符串
+    // var str2 = '你好，我是笨比';
+    // console.log(str2.replace('笨比', '天才'));
+    // //把o替换为*
+    // var str3 = 'jdslowfoofow';
+    // while (str3.indexOf('o') != -1) {
+    //   str3 = str3.replace('o', '*');
+    // }
+    // console.log(str3);
+    // //字符串转数组
+    // var str4 = 'pink&gReen&purple';
+    // console.log(str4.split('&')); //分隔符 &
+    // console.log(str4.toUpperCase());
+    // console.log(str4.toLowerCase());
+  </script>
+</body>
+
+</html>
