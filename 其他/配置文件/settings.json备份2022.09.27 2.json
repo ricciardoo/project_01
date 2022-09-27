@@ -1,0 +1,69 @@
+{
+  //.prettierrc的路径
+  "prettier.configPath": "/Users/oyrx/.prettierrc",
+
+  // 安装Prettier配置(第5行-第29行)
+  "eslint.alwaysShowStatus": true,
+  "prettier.trailingComma": "none",
+  "prettier.semi": false,
+
+  // 每行文字个数超出此限制将会被迫换行
+  "prettier.printWidth": 300,
+  // 使用单引号替换双引号
+  "prettier.singleQuote": true,
+  "prettier.arrowParens": "avoid",
+  // 设置 .vue 文件中，HTML代码的格式化插件
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "vetur.ignoreProjectWarning": true,
+  "vetur.format.defaultFormatterOptions": {
+    "prettier": {
+      "trailingComma": "none",
+      "singleQuote": true,
+      "semi": false,
+      "arrowParens": "avoid",
+      "printWidth": 300
+    },
+      "js-beautify-html": {
+        "wrap_attributes": false
+    },
+  },
+
+  //配置Path Autocomplete插件
+
+  //导入文件时是否携带文件的扩展名
+  "path-autocomplete.extensionOnImport": true,
+  //配置「@」的路径提示
+  "path-autocomplete.pathMappings": {
+    "@": "${folder}/src"
+  },
+
+  
+  //常规
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "window.zoomLevel": 1,
+  "workbench.iconTheme": "vscode-icons",
+  "editor.formatOnType": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "files.autoSave": "onFocusChange",
+
+  //prettier
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontFamily": "Monaco, Menlo, 'Courier New', monospace",
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  }
+  
+}
