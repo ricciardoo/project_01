@@ -1,0 +1,69 @@
+const a = {
+	// VSCode插件
+
+	//vscode-icons
+	"workbench.iconTheme": "vscode-icons",
+
+	//
+	//------------分割线------------
+	//
+
+	//Prettier
+	// vscode默认启用了根据文件类型自动设置tabsize的选项
+	"editor.detectIndentation": false,
+	// 重新设定tabsize
+	"editor.tabSize": 2,
+	// 开启 vscode 文件路径导航
+	"breadcrumbs.enabled": true,
+	// 换行属性
+	"prettier.printWidth": 100,
+	// 箭头函数参数括号 avoid 能不加时就不加
+	"prettier.arrowParens": "avoid",
+	// #prettier去掉代码结尾的分号
+	"prettier.semi": false,
+	// 无尾逗号
+	"prettier.trailingComma": "none",
+	// #使用带引号替代双引号
+	"prettier.singleQuote": true,
+	// #让函数(名)和后面的括号之间加个空格
+	"javascript.format.insertSpaceBeforeFunctionParenthesis": false,
+	// #这个按用户自身习惯选择
+	"vetur.format.defaultFormatter.html": "js-beautify-html",
+	// #让vue中的js按编辑器自带的ts格式进行格式化
+	"vetur.format.defaultFormatter.js": "vscode-typescript",
+	"vetur.format.defaultFormatterOptions": {
+		"js-beautify-html": {
+			// 多行属性
+			"wrap_attributes": "auto"
+		}
+	},
+	"prettier.useTabs": true,
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[vue]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+
+	//
+	//------------分割线------------
+	//
+
+	// VSCode 配置
+
+	//保存时自动格式化
+	"editor.formatOnSave": true,
+	//字号大小
+	"editor.fontSize": 16,
+	//字体
+	"editor.fontFamily": "Monaco,Menlo,'Courier New', monospace",
+	//command + s （失去焦点后）自动保存
+	"files.autoSave": "onFocusChange"
+}
